@@ -1,0 +1,20 @@
+# Amanda Rodrigues 
+def determinar_posição (x, y, largura, altura):
+    if x == 0 and y == 0:
+        print("centralizado")
+    if x>0 and y>0:
+        print("em cima a direita")
+    if x<0 and y>0:
+        print("em cima a esquerda")
+    if x>0 and y<0:
+        print("abaixo a direita")
+    if x<0 and y<0:
+        print("abaixo a esquerda")
+x = int(input("digite um valor para x "))
+y = int(input("digite um valor para y "))
+largura = 2
+altura = 3
+if x>largura or y>altura: 
+    print("está fora do retangulo")
+else: 
+    determinar_posição(x, y, largura, altura)
