@@ -3,13 +3,21 @@ def determinar_posição (x, y, largura, altura):
     if x == 0 and y == 0:
         print("centralizado")
     if x>0 and y>0:
-        print("em cima a direita")
+        print("acima a direita")
     if x<0 and y>0:
-        print("em cima a esquerda")
+        print("acima a esquerda")
     if x>0 and y<0:
         print("abaixo a direita")
     if x<0 and y<0:
         print("abaixo a esquerda")
+    if x == 0 and y>0: 
+        print("acima")
+    if x>0 and y == 0:
+        print("a direita") 
+    if x == 0 and y<0: 
+        print("abaixo")
+    if x<0 and y == 0:
+        print("a esqueda")
 x = int(input("digite um valor para x "))
 y = int(input("digite um valor para y "))
 largura = 2
